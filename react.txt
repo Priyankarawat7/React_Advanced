@@ -1,0 +1,117 @@
+Library
+it is used to implement one features
+
+ex:- It's like a plot and we can customize accordingly
+-Gsap
+-Lenis
+-ReactJs
+
+
+Framework
+
+it is already in built we can apply only few customization
+
+ex:- it's like a pre-built house
+-NextJS
+-Angular
+-NodeJs
+
+
+Export -2
+named -               
+default - only one thing
+
+
+import
+
+
+
+Real DOM vs  Virtual  DOM
+
+Real DOM-actual DOM  it's a tree like stucture
+html- head, body
+head-title
+body- header,section1,section2,section3,footer
+section1->h1,image,button
+
+the problem of real Dom is everything will be reload again and again
+
+
+
+Virtual Dom=>
+
+it creates the copy of real DOM
+
+it you are changing using button click it will only those value it 
+will not re-render the entire dom
+
+
+Jsx-> html+javascript
+
+combination of html and javascript
+
+Function first_leter should be Captial letter
+also Jsx file first letter should be capital letter
+
+
+
+Fragments
+
+<> </> //it's a wrapper
+
+
+
+Components
+
+ClassName is used because class is a keyword
+
+//App ko khali rkhna hota because the code will conjusted
+so we use component based architecture
+
+compoents Based- it is a peace of code which is used for one feature
+//Navbar
+//footer
+//card
+testonomials
+
+
+Jsx- javascript XML
+
+To print the variable you have to access the variable in {}
+
+Props-> it's is a keyword
+data always sent parent to child
+
+Props Drilling
+it means we can change the data of one card at using props Drilling 
+Jab data ko ek component se kisi deep/nested component tak pahunchane ke liye beech ke components ko bhi props pass karne padte hain, even though unhe khud us data ki zarurat nahi hoti — ise Props Drilling kehte hain.
+
+Array.map()
+Multiple cards ke liye map() bahut useful hai, lekin ek correction: map() props drilling ko directly solve nahi karta. Ye mainly same component ko different data ke saath repeatedly render karne ka clean way hai.
+
+//to conquer the hothpotch situation of props
+
+//Map idea
+example:-
+const jobs = [
+  {
+    company: "Amazon",
+    title: "Senior UI/UX Designer",
+    salary: "$120/hr"
+  },
+  {
+    company: "Google",
+    title: "Frontend Developer",
+    salary: "$100/hr"
+  },
+  {
+    company: "Microsoft",
+    title: "React Developer",
+    salary: "$90/hr"
+  }
+];
+
+
+//tommorow project
+
+https://i.pinimg.com/1200x/65/70/6d/65706de623782eb6bc5bdf102f064f0b.jpg
