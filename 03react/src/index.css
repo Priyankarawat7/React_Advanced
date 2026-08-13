@@ -1,0 +1,122 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* color: white; */
+ 
+  /* font-family: 'helvetica neue'; */
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+}
+
+.parent{
+ min-height: 100vh;
+  width: 100%;
+  background-color: rgb(36, 37, 37);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+
+}
+
+.card{
+  height: 550px;
+  width: 450px;
+  background-color: white;
+  border-radius: 25px;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: rgb(11, 11, 62);
+}
+
+.top{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+ 
+ 
+}
+
+.top img{
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+}
+
+.top  h3{
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.top h4{
+  font-size: 20px;
+  
+}
+
+.top h5{
+  font-size: 18px;
+
+}
+
+.top p{
+  text-align: center;
+  padding-left:30px;
+  padding-right: 30px;
+  color: gray;
+  margin-bottom: 30px;
+
+  
+}
+
+.center{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 40px;
+}
+
+
+.bottom{
+  align-self: stretch;
+  display: flex;
+  justify-content: space-around;
+}
+
+.bottom button{
+  height: 60px;
+  width: 150px;
+  border-radius: 15px;
+  margin-top: 40px;
+ 
+  
+}
+
+.msgbtn{
+  border: 2px solid rgb(11, 11, 62);
+  color: rgb(11, 11, 62);
+  font-weight: 500;
+  font-size: 18px;
+
+}
+
+.msgconnect{
+
+  background-color:  rgb(11, 11, 62);
+  font-weight: 500;
+  font-size: 18px;
+  color: white;
+   border: none;
+   outline: none;
+
+}
+
