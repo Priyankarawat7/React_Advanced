@@ -1,0 +1,12 @@
+
+
+.btn{
+  background-color: aqua;
+  height: 40px;
+  width: 120px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  text-align: center;
+  padding-top: 10px;
+}
