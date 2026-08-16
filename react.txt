@@ -115,3 +115,75 @@ const jobs = [
 //tommorow project
 
 https://i.pinimg.com/1200x/65/70/6d/65706de623782eb6bc5bdf102f064f0b.jpg
+
+
+//Css and it's types
+//Index.css pr sara code
+
+//create folder Styles and then create files_name.css
+
+but they both create problems
+
+
+Tailwind
+
+it's a utility  first library
+
+
+Features based components (Macro manage),
+Like Navbar ,header
+
+atomic based components(micro-manage)
+
+you have to create single -single component
+
+
+Functions
+
+
+Hooks
+it's a special types of functions to perfrom differnet tasks
+
+useState()
+ek State se dusre se state change hora hai (to manage  states) is called Hooks
+
+useEffect()
+to manage side distct
+side by side dusre process ko manage krne ke liye we use useEffects
+
+useRef()
+
+to select DOM Element
+                   
+
+useReducer()
+
+to manage complex logics
+
+
+
+useMemo(),useCallback()
+
+For optimization
+like to check data re-render to nhi hora double bar
+ ,to check kaam sahi se chlra h ki nahi,
+ data manage hora h ki nahi sahi se 
+
+
+
+
+useContext()
+
+to manage global useContext
+
+like App->section1->section2 (this is problem)
+
+to manage the problem we use UseContext
+(to set the data globally)
+
+
+
+
+
+
+
