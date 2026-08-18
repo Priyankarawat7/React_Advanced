@@ -148,17 +148,18 @@ useState()
 ek State se dusre se state change hora hai (to manage  states) is called Hooks
 
 useEffect()
-to manage side distct
+to manage side effects handle krne ke liye(jaise Api.call,Dom manipulation,event listener)
 side by side dusre process ko manage krne ke liye we use useEffects
 
 useRef()
 
 to select DOM Element
+mutable values k hold krne ke liye jo re-render trigger na kre
                    
 
 useReducer()
 
-to manage complex logics
+to manage complex state management (Reduc jaise chota version)
 
 
 
@@ -174,12 +175,17 @@ like to check data re-render to nhi hora double bar
 
 useContext()
 
-to manage global useContext
+to consume global state without prop drilling is called  useContext
 
 like App->section1->section2 (this is problem)
 
 to manage the problem we use UseContext
 (to set the data globally)
+
+
+
+
+
 
 
 
