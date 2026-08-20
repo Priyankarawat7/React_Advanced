@@ -184,6 +184,26 @@ to manage the problem we use UseContext
 
 
 
+LocalStorage:
+It's a browser memory to store some data,information     
+
+//localStorage.clear() //to clear the storage
+sessionStorage.clear()
+
+localStorage.setItem('user','Priyanka') //to set some value
+
+const age=localStorage.getItem('age')
+localStorage.removeItem('user')
+
+
+//
+
+//localStorage.setItem('user',JSON.stringify(user)) //to convert the data  into string 
+  
+const user=JSON.parse(localStorage.getItem('user')) //to convert the data into object
+
+  console.log(user);
+
 
 
 
