@@ -206,6 +206,11 @@ const user=JSON.parse(localStorage.getItem('user')) //to convert the data into o
 
 
 
+  fronted-->Backend
+  to interact we use Apis
+
+
+
 
 
 
