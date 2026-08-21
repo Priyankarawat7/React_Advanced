@@ -210,6 +210,20 @@ const user=JSON.parse(localStorage.getItem('user')) //to convert the data into o
   to interact we use Apis
 
 
+useEffect
+side by side saari multiple chize chlengi
+ek process khtm hone ke baad useffect vli chize chlti h
+
+useCases->
+jab jab useState ki value change hori h useEffect chlega(Mounting)
+
+useEffect(function()
+{
+  console.log("use effect is run");
+  
+},[]) //dependencies ka array paas krne pr component will mount but only once 
+
+if [] value dalte useState  toh vo uski dependencies ban chuka hai
 
 
 
