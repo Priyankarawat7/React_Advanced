@@ -1,0 +1,41 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+}
+
+.nav{
+ 
+}
+
+.light{
+  background-color: lightgreen;
+  color: black;
+   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 18px;
+
+}
+
+.dark{
+  background-color: darkslategrey;
+  color: white;
+   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.nav2{
+  display: flex;
+  gap: 30px;
+}
