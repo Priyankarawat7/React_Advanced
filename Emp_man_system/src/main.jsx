@@ -4,14 +4,12 @@ import './index.css'
 import App from './App.jsx'
 
 import Authprovider from './context/Authprovider.jsx'
+import { setLocalStorage } from './utils/LocalStorage.jsx'
 
+
+// setLocalStorage()
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    {/* <AuthContext>
-      <TaskContext>
-         <App />
-      </TaskContext>
-    </AuthContext> */}
   <Authprovider>
 
  <App/>

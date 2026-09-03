@@ -1,312 +1,361 @@
+
 const employees = [
   {
     id: 1,
+    name: "Rahul",
     email: "rahul@gmail.com",
     password: "123",
 
+    taskCount: {
+      active: 2,
+      newTask: 1,
+      completed: 1,
+      failed: 1,
+      total: 4
+    },
+
     tasks: [
       {
+        title: "Make a YouTube video",
+        description: "Create and upload a YouTube video.",
+        date: "20 Feb 2024",
+        category: "High",
         active: true,
         newTask: true,
         completed: false,
-        failed: false,
-        taskTitle: "Design Login Page",
-        taskDescription: "Create a responsive login page with email and password fields.",
-        taskDate: "2026-09-01",
-        category: "Design"
+        failed: false
       },
       {
+        title: "Complete React project",
+        description: "Finish the remaining React dashboard work.",
+        date: "22 Feb 2024",
+        category: "Medium",
         active: true,
         newTask: false,
         completed: false,
-        failed: false,
-        taskTitle: "Build Navbar",
-        taskDescription: "Develop a responsive navigation bar for the website.",
-        taskDate: "2026-09-02",
-        category: "Development"
+        failed: false
       },
       {
+        title: "Fix login bug",
+        description: "Fix the authentication issue in the application.",
+        date: "18 Feb 2024",
+        category: "High",
         active: false,
         newTask: false,
         completed: true,
-        failed: false,
-        taskTitle: "Create Landing Page",
-        taskDescription: "Build the landing page according to the provided design.",
-        taskDate: "2026-08-27",
-        category: "Frontend"
+        failed: false
       },
       {
+        title: "Submit report",
+        description: "Submit the project report before the deadline.",
+        date: "15 Feb 2024",
+        category: "Low",
         active: false,
         newTask: false,
         completed: false,
-        failed: true,
-        taskTitle: "Fix Mobile Layout",
-        taskDescription: "Fix responsive issues appearing on mobile devices.",
-        taskDate: "2026-08-25",
-        category: "Bug Fix"
+        failed: true
       }
     ]
   },
 
   {
     id: 2,
+    name: "Ananya",
     email: "ananya@gmail.com",
     password: "123",
 
+    taskCount: {
+      active: 2,
+      newTask: 1,
+      completed: 2,
+      failed: 1,
+      total: 5
+    },
+
     tasks: [
       {
+        title: "Design landing page",
+        description: "Create a responsive landing page design.",
+        date: "21 Feb 2024",
+        category: "High",
         active: true,
         newTask: true,
         completed: false,
-        failed: false,
-        taskTitle: "Create Dashboard UI",
-        taskDescription: "Design a clean and modern admin dashboard interface.",
-        taskDate: "2026-09-01",
-        category: "UI/UX"
+        failed: false
       },
       {
+        title: "Create navbar",
+        description: "Build a responsive navigation bar.",
+        date: "23 Feb 2024",
+        category: "Medium",
         active: true,
         newTask: false,
         completed: false,
-        failed: false,
-        taskTitle: "Design Profile Page",
-        taskDescription: "Create a user profile page with editable information.",
-        taskDate: "2026-09-03",
-        category: "Design"
+        failed: false
       },
       {
+        title: "Complete homepage",
+        description: "Finish the homepage UI and functionality.",
+        date: "17 Feb 2024",
+        category: "High",
         active: false,
         newTask: false,
         completed: true,
-        failed: false,
-        taskTitle: "Create Wireframes",
-        taskDescription: "Prepare wireframes for the new website.",
-        taskDate: "2026-08-26",
-        category: "UI/UX"
+        failed: false
       },
       {
+        title: "Test website",
+        description: "Test the website on different screen sizes.",
+        date: "16 Feb 2024",
+        category: "Low",
         active: false,
         newTask: false,
         completed: true,
-        failed: false,
-        taskTitle: "Choose Color Palette",
-        taskDescription: "Select suitable colors for the application interface.",
-        taskDate: "2026-08-24",
-        category: "Design"
+        failed: false
       },
       {
+        title: "Fix CSS issues",
+        description: "Fix remaining styling issues.",
+        date: "14 Feb 2024",
+        category: "Medium",
         active: false,
         newTask: false,
         completed: false,
-        failed: true,
-        taskTitle: "Create Mobile Prototype",
-        taskDescription: "Build a mobile prototype for the application.",
-        taskDate: "2026-08-22",
-        category: "Prototype"
+        failed: true
       }
     ]
   },
 
   {
     id: 3,
+    name: "Arjun",
     email: "arjun@gmail.com",
     password: "123",
 
+    taskCount: {
+      active: 3,
+      newTask: 2,
+      completed: 2,
+      failed: 1,
+      total: 6
+    },
+
     tasks: [
       {
+        title: "Build dashboard",
+        description: "Create the employee dashboard UI.",
+        date: "24 Feb 2024",
+        category: "High",
         active: true,
         newTask: true,
         completed: false,
-        failed: false,
-        taskTitle: "Create REST API",
-        taskDescription: "Develop REST APIs for user authentication and management.",
-        taskDate: "2026-09-01",
-        category: "Backend"
+        failed: false
       },
       {
-        active: true,
-        newTask: false,
-        completed: false,
-        failed: false,
-        taskTitle: "Connect Database",
-        taskDescription: "Connect the application with the MySQL database.",
-        taskDate: "2026-09-02",
-        category: "Database"
-      },
-      {
-        active: false,
-        newTask: false,
-        completed: true,
-        failed: false,
-        taskTitle: "Setup Express Server",
-        taskDescription: "Configure Express server and required middleware.",
-        taskDate: "2026-08-25",
-        category: "Backend"
-      },
-      {
-        active: false,
-        newTask: false,
-        completed: true,
-        failed: false,
-        taskTitle: "Create User Model",
-        taskDescription: "Create the database model for application users.",
-        taskDate: "2026-08-26",
-        category: "Database"
-      },
-      {
-        active: false,
-        newTask: false,
-        completed: false,
-        failed: true,
-        taskTitle: "Fix API Authentication",
-        taskDescription: "Resolve authentication errors in protected API routes.",
-        taskDate: "2026-08-28",
-        category: "Bug Fix"
-      },
-      {
+        title: "Add authentication",
+        description: "Implement login and logout functionality.",
+        date: "25 Feb 2024",
+        category: "High",
         active: true,
         newTask: true,
         completed: false,
-        failed: false,
-        taskTitle: "Implement JWT Auth",
-        taskDescription: "Implement JWT based authentication for the application.",
-        taskDate: "2026-09-04",
-        category: "Backend"
+        failed: false
+      },
+      {
+        title: "Create API",
+        description: "Create API endpoints for the project.",
+        date: "26 Feb 2024",
+        category: "Medium",
+        active: true,
+        newTask: false,
+        completed: false,
+        failed: false
+      },
+      {
+        title: "Database setup",
+        description: "Configure the project database.",
+        date: "20 Feb 2024",
+        category: "High",
+        active: false,
+        newTask: false,
+        completed: true,
+        failed: false
+      },
+      {
+        title: "API testing",
+        description: "Test all API endpoints using Postman.",
+        date: "19 Feb 2024",
+        category: "Medium",
+        active: false,
+        newTask: false,
+        completed: true,
+        failed: false
+      },
+      {
+        title: "Fix deployment",
+        description: "Fix deployment related issues.",
+        date: "18 Feb 2024",
+        category: "Low",
+        active: false,
+        newTask: false,
+        completed: false,
+        failed: true
       }
     ]
   },
 
   {
     id: 4,
+    name: "Simran",
     email: "simran@gmail.com",
     password: "123",
 
+    taskCount: {
+      active: 2,
+      newTask: 1,
+      completed: 2,
+      failed: 0,
+      total: 4
+    },
+
     tasks: [
       {
+        title: "Create portfolio",
+        description: "Build a modern developer portfolio.",
+        date: "27 Feb 2024",
+        category: "High",
         active: true,
         newTask: true,
         completed: false,
-        failed: false,
-        taskTitle: "Analyze Sales Data",
-        taskDescription: "Analyze monthly sales data and identify important trends.",
-        taskDate: "2026-09-01",
-        category: "Data Analytics"
+        failed: false
       },
       {
+        title: "Add projects",
+        description: "Add all completed projects to portfolio.",
+        date: "28 Feb 2024",
+        category: "Medium",
         active: true,
         newTask: false,
         completed: false,
-        failed: false,
-        taskTitle: "Create Sales Report",
-        taskDescription: "Prepare a detailed report based on the sales dataset.",
-        taskDate: "2026-09-03",
-        category: "Reporting"
+        failed: false
       },
       {
+        title: "Design contact page",
+        description: "Create and complete the contact page.",
+        date: "22 Feb 2024",
+        category: "Medium",
         active: false,
         newTask: false,
         completed: true,
-        failed: false,
-        taskTitle: "Clean Dataset",
-        taskDescription: "Remove duplicate and missing values from the dataset.",
-        taskDate: "2026-08-25",
-        category: "Data Cleaning"
+        failed: false
       },
       {
+        title: "Deploy portfolio",
+        description: "Deploy the portfolio website.",
+        date: "21 Feb 2024",
+        category: "High",
         active: false,
         newTask: false,
         completed: true,
-        failed: false,
-        taskTitle: "Create Charts",
-        taskDescription: "Create visual charts to represent important metrics.",
-        taskDate: "2026-08-27",
-        category: "Visualization"
+        failed: false
       }
     ]
   },
 
   {
     id: 5,
+    name: "Karan",
     email: "karan@gmail.com",
     password: "123",
 
+    taskCount: {
+      active: 3,
+      newTask: 2,
+      completed: 3,
+      failed: 1,
+      total: 7
+    },
+
     tasks: [
       {
+        title: "Create login page",
+        description: "Build a responsive login page.",
+        date: "01 Mar 2024",
+        category: "High",
         active: true,
         newTask: true,
         completed: false,
-        failed: false,
-        taskTitle: "Test Login System",
-        taskDescription: "Test login and logout functionality with different users.",
-        taskDate: "2026-09-01",
-        category: "Testing"
+        failed: false
       },
       {
-        active: true,
-        newTask: false,
-        completed: false,
-        failed: false,
-        taskTitle: "Test Registration Form",
-        taskDescription: "Check registration form validation and error handling.",
-        taskDate: "2026-09-02",
-        category: "Testing"
-      },
-      {
-        active: false,
-        newTask: false,
-        completed: true,
-        failed: false,
-        taskTitle: "Test Navbar",
-        taskDescription: "Verify all navigation links and responsive behavior.",
-        taskDate: "2026-08-24",
-        category: "Testing"
-      },
-      {
-        active: false,
-        newTask: false,
-        completed: true,
-        failed: false,
-        taskTitle: "Test Dashboard",
-        taskDescription: "Test dashboard components and task statistics.",
-        taskDate: "2026-08-26",
-        category: "Testing"
-      },
-      {
-        active: false,
-        newTask: false,
-        completed: false,
-        failed: true,
-        taskTitle: "Test Mobile View",
-        taskDescription: "Test the application on different mobile screen sizes.",
-        taskDate: "2026-08-28",
-        category: "Testing"
-      },
-      {
+        title: "Create signup page",
+        description: "Build a responsive registration page.",
+        date: "02 Mar 2024",
+        category: "High",
         active: true,
         newTask: true,
         completed: false,
-        failed: false,
-        taskTitle: "Test Task Creation",
-        taskDescription: "Verify that admins can create and assign new tasks.",
-        taskDate: "2026-09-05",
-        category: "Testing"
+        failed: false
       },
       {
+        title: "Add form validation",
+        description: "Add validation to all forms.",
+        date: "03 Mar 2024",
+        category: "Medium",
+        active: true,
+        newTask: false,
+        completed: false,
+        failed: false
+      },
+      {
+        title: "Fix responsive issues",
+        description: "Make the website responsive.",
+        date: "25 Feb 2024",
+        category: "Medium",
         active: false,
         newTask: false,
         completed: true,
-        failed: false,
-        taskTitle: "Test Error Messages",
-        taskDescription: "Verify that proper error messages are displayed to users.",
-        taskDate: "2026-08-29",
-        category: "Testing"
+        failed: false
+      },
+      {
+        title: "Test authentication",
+        description: "Test login and registration functionality.",
+        date: "24 Feb 2024",
+        category: "High",
+        active: false,
+        newTask: false,
+        completed: true,
+        failed: false
+      },
+      {
+        title: "Update UI",
+        description: "Improve the overall application UI.",
+        date: "23 Feb 2024",
+        category: "Low",
+        active: false,
+        newTask: false,
+        completed: true,
+        failed: false
+      },
+      {
+        title: "Fix production bug",
+        description: "Fix the bug found in production.",
+        date: "22 Feb 2024",
+        category: "High",
+        active: false,
+        newTask: false,
+        completed: false,
+        failed: true
       }
     ]
   }
 ];
 
+
+
 const admin = [{
   id: 101,
+  name: "Admin",
   email: "admin@gmail.com",
   password: "123"
 }];
@@ -318,8 +367,8 @@ export const setLocalStorage=()=>{
 
 
 export const getLocalStorage=()=>{
-  const employees= JSON.parse(localStorage.getItem('employees' ))
-   const admin= JSON.parse(localStorage.getItem('admin' ))
+    const employees = JSON.parse(localStorage.getItem('employees')) || []
+  const admin = JSON.parse(localStorage.getItem('admin')) || []
   // console.log(employees);
   // console.log(admin);
 
