@@ -6,24 +6,24 @@ import CompleteTask from './CompleteTask';
 
 function TaskList({data}) {
 
-  console.log(data?.tasks);
+  //console.log(data?.tasks);
   
   return (
     <div id='tasklist' className='h-[55%] overflow-x-auto py-5 w-full  flex flex-nowrap items-center justify-start gap-10 p-5'>
       
       {data.tasks.map((e,index)=>{
         if(e.active){
-          return <AcceptTask/>
+          return <AcceptTask key={index}/>
         }
         if(e.completed){
-          return <CompleteTask/>
+          return <CompleteTask key={index}/>
 
         }
         if(e.failed){
-          return <FailedTask/>
+          return <FailedTask key={index}/>
         }
         else{  
-          return <NewTask/>
+          return <NewTask key={index}/>
         }
       })}
       {/* <AcceptTask/>

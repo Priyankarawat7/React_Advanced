@@ -2,7 +2,7 @@ import React from 'react'
 
 function Header({data}) {
 
-  console.log(data);
+ // console.log(data);
   const handleLogout=()=>{
     localStorage.removeItem('loggedInUser')
     window.location.reload()
