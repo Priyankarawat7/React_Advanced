@@ -64,9 +64,9 @@ const handleLogin=(email,password)=>{
     <>
      {!user ?<Login handleLogin={handleLogin}/>:''}
 
-     {user?.role =='admin' && <AdminDashboard />}
+     {user?.role =='admin' && <AdminDashboard  changeUser={setUser}/>}
 
-     {user?.role=='employee' && <EmployeeDashboard  data={loggedinUserData}/>}
+     {user?.role=='employee' && <EmployeeDashboard changeUser={setUser}  data={loggedinUserData}/>}
     </>
   )
 }

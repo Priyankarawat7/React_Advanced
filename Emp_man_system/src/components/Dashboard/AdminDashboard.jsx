@@ -3,13 +3,13 @@ import Header from '../other/Header'
 import CreateTask from '../other/CreateTask'
 import AllTask from '../other/AllTask'
 
-function AdminDashboard({data}) {
+function AdminDashboard(props) {
   return (
     <div className='h-screen w-full p-10'>
-      <Header data={data}/>
-      <CreateTask data={data}/>
+      <Header changeUser={props.changeUser}/>
+      <CreateTask />
 
-      <AllTask data={data}/>
+      <AllTask />
 
       
                       
