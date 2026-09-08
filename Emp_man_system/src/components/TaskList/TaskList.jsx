@@ -13,17 +13,17 @@ function TaskList({data}) {
       
       {data.tasks.map((e,index)=>{
         if(e.active){
-          return <AcceptTask key={index}/>
+          return <AcceptTask key={index} data={e}/>
         }
         if(e.completed){
-          return <CompleteTask key={index}/>
+          return <CompleteTask key={index} data={e}/>
 
         }
         if(e.failed){
-          return <FailedTask key={index}/>
+          return <FailedTask key={index} data={e}/>
         }
         else{  
-          return <NewTask key={index}/>
+          return <NewTask key={index} data={e}/>
         }
       })}
       {/* <AcceptTask/>

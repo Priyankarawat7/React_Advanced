@@ -35,7 +35,7 @@ function Login({handleLogin}) {
          onChange={(e)=>{
          setEmail(e.target.value)
 
-         console.log(e.target.value);
+         //console.log(e.target.value);
          
           
         }} required 

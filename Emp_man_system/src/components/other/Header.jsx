@@ -15,9 +15,7 @@ function Header({data}) {
       <h1 className='text-xl font-semibold'>Hello <br/> <span className='text-2xl font-semibold'>{data?.name}✋</span></h1>
 
       <button onClick={handleLogout}
-       className='py-2 px-3 font-medium bg-emerald-900  rounded-lg'>Log Out</button>
-
-          
+       className='py-2 px-3 font-medium bg-emerald-900  rounded-lg'>Log Out</button>   
     </div>
   )
 }

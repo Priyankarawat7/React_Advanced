@@ -360,6 +360,8 @@ const admin = [{
   password: "123"
 }];
 
+ //localStorage.clear()
+
 export const setLocalStorage=()=>{
     localStorage.setItem('employees',JSON.stringify(employees))
     localStorage.setItem('admin',JSON.stringify(admin))

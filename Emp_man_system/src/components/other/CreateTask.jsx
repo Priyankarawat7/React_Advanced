@@ -1,7 +1,12 @@
 import React from 'react'
 
 function CreateTask() {
+  
+    const submitHandler=()=>{
+      
+    }
   return (
+
     <>
         <div className="mt-20">
        

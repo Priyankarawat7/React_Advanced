@@ -9,12 +9,12 @@ import { setLocalStorage } from './utils/LocalStorage.jsx'
 
 // setLocalStorage()
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
+  // <StrictMode>
   <Authprovider>
 
  <App/>
   </Authprovider>
 
    
-  </StrictMode>,
+ // </StrictMode>,
 )

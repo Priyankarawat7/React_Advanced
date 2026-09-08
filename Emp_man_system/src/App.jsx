@@ -18,23 +18,19 @@ const[loggedinUserData,setLoggedinUserData]=useState()
 const authdata=useContext(AuthContext)
 //console.log(authdata);
 
- useEffect(()=>{
-//   if(authdata)
-//   {
-    const loggedInUser=localStorage.getItem('loggedInUser')
-    console.log(loggedInUser);
-    
-     if(loggedInUser)
-     {
-      const userData=JSON.parse(loggedInUser)
-//       setUser(JSON.parse(loggedInUser))
-      setUser(userData.role)
-      setLoggedinUserData(userData.role)
-      
-      
+useEffect(() => {
+  const loggedInUser = localStorage.getItem('loggedInUser')
+
+  if (loggedInUser) {
+    const userData = JSON.parse(loggedInUser)
+
+    setUser(userData)
+
+    if (userData.role === 'employee') {
+      setLoggedinUserData(userData.data)
     }
-//   }
- },[authdata])
+  }
+}, [])
 
 
 const handleLogin=(email,password)=>{
