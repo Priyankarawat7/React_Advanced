@@ -4,9 +4,9 @@ import { AuthContext } from '../../context/Authprovider'
 
 function AllTask() {
 
-  const authData = useContext(AuthContext)
+  const [userdata,setUserData] = useContext(AuthContext)
 
-  console.log(authData.employees)
+  console.log(userdata.employees)
 
   return (
     <div className='bg-[#1c1c1c] rounded-xl p-5 h-1/2 mt-10 
@@ -39,7 +39,7 @@ function AllTask() {
       {/* Employees */}
       <div className='h-[calc(100%-60px)] overflow-y-auto space-y-3'>
 
-        {authData.employees.map((e, index) => {
+        {userdata.employees.map((e, index) => {
 
           return (
             <div

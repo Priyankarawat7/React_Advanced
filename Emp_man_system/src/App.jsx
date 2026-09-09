@@ -15,7 +15,7 @@ function App() {
 const [user,setUser]=useState(null)
 const[loggedinUserData,setLoggedinUserData]=useState()
 
-const authdata=useContext(AuthContext)
+const [userdata,setUserData]=useContext(AuthContext)
 //console.log(authdata);
 
 useEffect(() => {
@@ -34,7 +34,7 @@ useEffect(() => {
 
 
 const handleLogin=(email,password)=>{
-  const admin =authdata.admin.find((e)=>email==e.email && e.password==password )
+  const admin =userdata.admin.find((e)=>email==e.email && e.password==password )
 
 
   if(admin){
@@ -46,7 +46,7 @@ const handleLogin=(email,password)=>{
     return
   }
 
-  const employee=authdata.employees.find((e)=>email==e.email && e.password==password )
+  const employee=userdata.employees.find((e)=>email==e.email && e.password==password )
    // console.log('this is user',email,password);
   if(employee)
       {

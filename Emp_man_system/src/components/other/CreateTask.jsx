@@ -1,6 +1,9 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
+import { AuthContext } from '../../context/Authprovider'
 
 function CreateTask() {
+
+   const [userdata,setUserData] = useContext(AuthContext)
 
   const[taskTitle,setTaskTitle]=useState('')
   const[taskDesc,setTaskDesc]=useState('')
@@ -12,27 +15,46 @@ function CreateTask() {
     const submitHandler=(e)=>{
       e.preventDefault()
        //console.log("Task Created",taskTitle,taskDesc,taskdate,assignto,category);
-    const newTask={taskTitle,taskDesc,taskdate,assignto,category ,active:false,newTask:true,failed:false,completed:true }
-
+    const newTask=
+    {
+     title: taskTitle,
+  description: taskDesc,
+  date: taskdate,
+  category: category,
+  active: false,
+  newTask: true,
+  completed: false,
+  failed: false
+    }
     setTask(newTask)
     console.log(newTask);
 
-   const data=JSON.parse(localStorage.getItem('employees'))
+   //const data=JSON.parse(localStorage.getItem('employees'))
+  const data=userdata.employees
 
-   console.log(data);
+ // console.log(data);
+  
+   //console.log(data);
 
 
    data.forEach((e)=>{
 
-    if(assignto.toLowerCase()==e.name.toLowerCase())
-   
-    console.log('aagya',e.tasks);
+    if(assignto.toLowerCase()==e.name.toLowerCase()){    
+     // console.log('aagya',data);
+     e.tasks.push(newTask)
+     e.taskCount.newTask=e.taskCount.newTask+1
+     e.taskCount.total += 1;
 
-    e.tasks.push(newTask)
-   
+    }
+
    })
 
-   localStorage.setItem('employees',JSON.stringify                   (data))
+    setUserData({...userdata,employees:data})
+
+   console.log(data);
+   
+
+   localStorage.setItem('employees',JSON.stringify(data))
 
    setTaskTitle('')
    setTaskDesc('')

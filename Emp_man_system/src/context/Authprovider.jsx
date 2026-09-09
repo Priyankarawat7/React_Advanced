@@ -23,7 +23,7 @@ function Authprovider({ children }) {
   }, [])
 
   return (
-    <AuthContext.Provider value={userdata}>
+    <AuthContext.Provider value={[userdata,setUserData]}>
       {children}
     </AuthContext.Provider>
   )
