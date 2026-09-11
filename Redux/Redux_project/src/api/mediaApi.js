@@ -2,6 +2,7 @@ import axios from 'axios'
 
 const UNSPLASH_KEY=import.meta.env.VITE_UNSPLASH_KEY
 const PEXEL_KEY=import.meta.env.VITE_PEXELS_KEY
+const GIPHY_KEY=import.meta.env.VITE_GIPHY_KEY
 
 
 
@@ -12,4 +13,28 @@ const PEXEL_KEY=import.meta.env.VITE_PEXELS_KEY
    })
     return response.data
     
+}
+
+export async function fetchVideos(query,per_page=15) {
+  const response=await axios.get('https://api.pexels.com/videos/search',{
+    params:{ query,
+      per_page 
+    },
+  headers:{Authorization: PEXEL_KEY}
+
+  })
+  return response.data
+  
+}
+
+export async function  fetchGif(query,limit=10) {
+  const response=await axios.get("https://api.giphy.com/v1/gifs/search",{
+    params:{
+      api_key:GIPHY_KEY,
+      q:query,
+      limit
+       }
+  })
+  return response.data
+  
 }
