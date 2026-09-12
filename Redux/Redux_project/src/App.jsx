@@ -1,5 +1,7 @@
 import React from 'react'
 import SearchBar from './components/SearchBar'
+import Tabs from './components/Tabs'
+import ResultGrid from './components/ResultGrid'
 
 const App = () => {
   
@@ -7,6 +9,8 @@ const App = () => {
      <>
      <div className='h-screen bg-gray-950 text-white'>
       <SearchBar/>
+      <Tabs/>
+      <ResultGrid/>
 
         </div>
      </>
