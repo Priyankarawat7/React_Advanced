@@ -11,7 +11,7 @@ export const searchSlice=createSlice({
         query:'',
         activeTab:'photos',
         results:[],
-        loading:false,
+        loading:true,
         error:null
     },
     reducers:{
