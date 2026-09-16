@@ -32,7 +32,7 @@ function SearchBar() {
         value={text}
         onChange={(e)=>{
           setStext(e.target.value)
-          console.log(e.target.value);
+          //console.log(e.target.value);
           
         }}
          className='w-full border-2 py-2 px-3 outline'

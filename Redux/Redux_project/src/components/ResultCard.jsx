@@ -1,15 +1,18 @@
 import React from 'react'
+import { useDispatch, useSelector } from 'react-redux';
+import { addCollection, addToast } from '../redux/features/collectionSlice';
 
 function ResultCard({item}) {
    // console.log(item.type);
+  //const collection=useSelector((state)=>state.collection.value)
+  const dispatch=useDispatch()
 
-  const addtocollection=(item)=>{
-    const oldData=JSON.parse(localStorage.getItem('collection')) || []
-    console.log(oldData);
-    
-    const newData=[...oldData,item]
-    localStorage.setItem('collection',JSON.stringify(newData))
-     console.log(newData);
+   const addtocollection=(item)=>{
+    dispatch(addCollection(item));
+    dispatch(addToast())
+
+  // console.log('ho gya ky');
+   
     
 
    }
@@ -23,8 +26,9 @@ function ResultCard({item}) {
       <div>
         <div id='bottom' className='flex justify-between gap-3 items-center  w-full py-6 px-10 absolute bottom-0 text-white '>
             <h2 className='text-xl font-semibold'>{item.title}</h2>
-            <button onClick={(e)=>{
-              addtocollection(item)
+            <button onClick={()=>{
+              //console.log("BUTTON CLICKED");
+              addtocollection(item) 
             }}
              className=' mt-5 py-1 px-5 rounded-2xl font-medium bg-white text-gray-900 cursor-pointer active:scale-95 '>Save</button>
             </div> 

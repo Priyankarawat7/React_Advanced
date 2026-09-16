@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 function HomePage() {
     const {query}= useSelector((store)=>store.search)
-    console.log(query);
+   // console.log(query);
     
   return (
     <div>

@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { ToastContainer, toast } from 'react-toastify';
 import { Route, Routes } from 'react-router-dom'
 import HomePage from './pages/HomePage'
 import CollectionPage from './pages/CollectionPage'
@@ -16,6 +16,8 @@ const App = () => {
       <Route path='/collection' element={<CollectionPage/>}/>
       
      </Routes>
+
+     <ToastContainer/>
      
     
 

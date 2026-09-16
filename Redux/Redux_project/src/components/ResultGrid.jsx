@@ -53,7 +53,7 @@ function ResultGrid() {
      }
      if(activeTab==='gif'){
         let response=await fetchGif(query)
-         console.log(response.data);
+       
          data=response.data.map((item)=>({
             id:item.id,
             type:'gif',
@@ -64,6 +64,9 @@ function ResultGrid() {
            
 
         }))
+
+        console.log(data);
+        
        
        
      }
