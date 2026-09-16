@@ -27,7 +27,7 @@ function SearchBar() {
        <form  onSubmit={(e)=>{
         submitHandler(e)
       }}
-       className='flex items-center gap-5 justify-around pt-10 bg-gray-800 p-10'>
+       className='flex items-center gap-5 justify-around pt-10 bg-[var(--c2)] p-10'>
         <input 
         value={text}
         onChange={(e)=>{
