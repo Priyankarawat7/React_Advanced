@@ -47,11 +47,24 @@ const collectionSlice=createSlice({
                 transition: Slide,
             });
 
+        },
+        removeToast:()=>{
+            toast.error('Remove from collection', {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: false,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+            transition: Slide,
+        });
         }
         
     }
 })
 
-export const {addCollection,removeCollection,clearCollection,addToast}=collectionSlice.actions
+export const {addCollection,removeCollection,clearCollection,addToast,removeToast}=collectionSlice.actions
 
 export default collectionSlice.reducer
